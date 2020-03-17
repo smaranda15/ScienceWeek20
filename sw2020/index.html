@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Science Week '20 Colegiul Costache Negruzzi</title>
+		<!--Css, bootstrap si jquery-->
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="css_bootstrap/bootstrap.min.css">
+		<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+		
+	</head>
+	<body>
+
+		<div class="header">
+			<p>Invisible</p>
+		</div>
+
+		<nav id="navigation" class="navbar fixed-top  navbar-light">
+			<a title="Acasa"  class="navbar-brand" style="cursor: pointer;"><img src="Images/sw.png" width="150" height=auto alt=""></a>
+			<a id="hvr-grow2" href="http://www.colegiulnegruzzi.ro/" title="www.colegiulnegruzzi.ro"><img src="Images/sigla_nzz_2015.png" width="85" height="85" alt=""></a>
+			<button id="hvr-grow2" class="buton1" type="button" data-toggle="modal" data-target="#inscriere">Înscrie-te!</button>
+			<button id="hvr-fade" class="buton2" class="navbar-text">Descarca Programul</button>
+			<a href="#" style="color:black">Click for!</a>
+
+			<div id="navbar">
+			  <a title="Fizica" class="fiz" id="hvr-grow"><img src="Images/Iconite/fiz.png" width="60" height="60"></a>
+			  <a title="Chimie" class="chimie" id="hvr-grow"><img src="Images/Iconite/chimie.png" width="60" height="60"></a>
+			  <a title="Geografie" class="geo" id="hvr-grow"><img src="Images/Iconite/geo.png" width="60" height="60"></a>
+			  <a title="Informatica" class="info" id="hvr-grow"><img src="Images/Iconite/info.png" width="54" height="54"></a>
+			  <a title="Biologie" class="bio" id="hvr-grow"><img src="Images/Iconite/bio.png" width="60" height="60"></a>
+			  <a title="Matematica" class="mate" id="hvr-grow"><img src="Images/Iconite/mate.png" width="60" height="60"></a>
+			  </div>
+		</nav>
+
+		
+<!-- Modal -->
+<div class="modal fade" id="inscriere" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Înscriere</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+			<form class="needs-validation" novalidate>
+			  <div class="form-row">
+			    <div class="col">
+			     	<input type="text" class="form-control" placeholder="Nume">
+			    </div>
+			    <div class="col">
+			      <input type="text" class="form-control" placeholder="Prenume">
+			    </div>
+			  </div>
+			  <br>
+			  <div class="form-row">
+			  	<div class="col">
+			  		<input type="email" class="form-control" placeholder="Email">
+			  	</div>
+			  </div>
+			  <br>
+			  <div class="form-row">
+			  	<div class="col">
+				    <select class="custom-select" id="validationCustom04" required>
+					    <option selected disabled value="">Clasa</option>
+				        <option value="1">5</option>
+				        <option value="2">6</option>
+				        <option value="3">7</option>
+				        <option value="4">8</option>
+				        <option value="5">9</option>
+				        <option value="6">10</option>
+				        <option value="7">11</option>
+				        <option value="8">12</option>
+				      </select>
+			  	</div>
+			  </div>
+			  <br>
+			  <div class="form-row">
+			  	<div class="col">
+				    <select class="custom-select" id="materie" name="materie" required>
+					    <option selected disabled value="">Materia</option>
+				        <option value="Matematica">Matematica</option>
+				        <option value="Informatica">Informatica</option>
+				        <option value="Biologie">Biologie</option>
+				        <option value="Geografie">Geografie</option>
+				        <option value="Fizica">Fizica</option>
+				        <option value="Chimie">Chimie</option>
+				      </select>
+			  	</div>
+					<div class="col">
+					    <select class="custom-select" id="activitate" name="activitate" required>
+						    <option selected disabled value="">Activitatea</option>
+					    </select>
+				    </div>
+			    </div>
+			  	<br>
+		  </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success">Înscrie-te!</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+		<img id="banner" src="Images/sw.png">
+
+		<div class="mainBody">
+			<br>
+			<h1 id="programTitle">Program</h1>
+			<br>
+
+			<div id="mate" class="container-fluid" >
+				<img src="Images/math.jpg" >
+				<div class="text-block">
+					<h1>Matematica</h1>
+					<span><em>Pure mathematics is, in its way, the poetry of logical ideas.</em></span>
+					<span>— Albert Einstein</span>
+				</div>
+			</div>
+
+			<div class="container-fluid">
+				<br>
+				<br>
+				<div class="row justify-content-md-center">
+					<div class="col-md-auto">
+						<h1>Luni</h1>
+					</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">9.00-10.00</div>
+					<div class="col-3">Back to school</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">11.00-12.00</div>
+					<div class="col-3">Deschidere Lore Ipsum</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">13.00-14.30</div>
+					<div class="col-3">Conferinta</div>
+				</div>
+				<br>
+				<br>
+				<div class="row justify-content-md-center">
+					<div class="col-md-auto">
+						<h1>Marti</h1>
+					</div>
+				</div>
+				<br>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">9.00-10.00</div>
+					<div class="col-3">Back to school</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">11.00-12.00</div>
+					<div class="col-3">Deschidere Lore Ipsum</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">13.00-14.30</div>
+					<div class="col-3">Conferinta</div>
+				</div>
+				<br>
+				<br>
+				<div class="row justify-content-md-center">
+					<div class="col-md-auto">
+						<h1>Miercuri</h1>
+					</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">9.00-10.00</div>
+					<div class="col-3">Back to school</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">11.00-12.00</div>
+					<div class="col-3">Deschidere Lore Ipsum</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">13.00-14.30</div>
+					<div class="col-3">Conferinta</div>
+				</div>
+				<br>
+				<br>
+				<div class="row justify-content-md-center">
+					<div class="col-md-auto">
+						<h1>Joi</h1>
+					</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">9.00-10.00</div>
+					<div class="col-3">Back to school</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">11.00-12.00</div>
+					<div class="col-3">Deschidere Lore Ipsum</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">13.00-14.30</div>
+					<div class="col-3">Conferinta</div>
+				</div>
+				<br>
+				<br>
+				<div class="row justify-content-md-center">
+					<div class="col-md-auto">
+						<h1>Vineri</h1>
+					</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">9.00-10.00</div>
+					<div class="col-3">Back to school</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">11.00-12.00</div>
+					<div class="col-3">Deschidere Lore Ipsum</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">13.00-14.30</div>
+					<div class="col-3">Conferinta</div>
+				</div>
+				<br>
+				<br>
+			</div>
+			<br>
+			<div id="bio" class="container-fluid">
+				<img src="Images/bio.jpg">
+				<div class="text-block">
+					<h1>Biologie</h1>
+					<span><em>Evolution is the fundamental idea in all of life science - in all of biology.</em></span>
+					<span>— Bill Nye</span>
+				</div>
+			</div>	
+			<div class="container-fluid">
+				<br>
+				<br>
+				<div class="row justify-content-md-center">
+					<div class="col-md-auto">
+						<h1>Luni</h1>
+					</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">9.00-10.00</div>
+					<div class="col-3">Back to school</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">11.00-12.00</div>
+					<div class="col-3">Deschidere Lore Ipsum</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">13.00-14.30</div>
+					<div class="col-3">Conferinta</div>
+				</div>
+				<br>
+				<br>
+				<div class="row justify-content-md-center">
+					<div class="col-md-auto">
+						<h1>Marti</h1>
+					</div>
+				</div>
+				<br>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">9.00-10.00</div>
+					<div class="col-3">Back to school</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">11.00-12.00</div>
+					<div class="col-3">Deschidere Lore Ipsum</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">13.00-14.30</div>
+					<div class="col-3">Conferinta</div>
+				</div>
+				<br>
+				<br>
+				<div class="row justify-content-md-center">
+					<div class="col-md-auto">
+						<h1>Miercuri</h1>
+					</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">9.00-10.00</div>
+					<div class="col-3">Back to school</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">11.00-12.00</div>
+					<div class="col-3">Deschidere Lore Ipsum</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">13.00-14.30</div>
+					<div class="col-3">Conferinta</div>
+				</div>
+				<br>
+				<br>
+				<div class="row justify-content-md-center">
+					<div class="col-md-auto">
+						<h1>Joi</h1>
+					</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">9.00-10.00</div>
+					<div class="col-3">Back to school</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">11.00-12.00</div>
+					<div class="col-3">Deschidere Lore Ipsum</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">13.00-14.30</div>
+					<div class="col-3">Conferinta</div>
+				</div>
+				<br>
+				<br>
+				<div class="row justify-content-md-center">
+					<div class="col-md-auto">
+						<h1>Vineri</h1>
+					</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">9.00-10.00</div>
+					<div class="col-3">Back to school</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">11.00-12.00</div>
+					<div class="col-3">Deschidere Lore Ipsum</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">13.00-14.30</div>
+					<div class="col-3">Conferinta</div>
+				</div>
+				<br>
+				<br>
+			</div>
+			<div id="info" class="container-fluid">
+				<img id="img-info" src="Images/info.jpg">
+				<div class="text-block">
+					<h1>Informatica</h1>
+					<span><em>Computer s themselves, and software yet to be developed, will revolutionize the way we learn.</em></span>
+					<span>— Steve Jobs</span>
+				</div>
+			</div>
+			<div class="container-fluid">
+				<br>
+				<br>
+				<div class="row justify-content-md-center">
+					<div class="col-md-auto">
+						<h1>Luni</h1>
+					</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">9.00-10.00</div>
+					<div class="col-3">Back to school</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">11.00-12.00</div>
+					<div class="col-3">Deschidere Lore Ipsum</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">13.00-14.30</div>
+					<div class="col-3">Conferinta</div>
+				</div>
+				<br>
+				<br>
+				<div class="row justify-content-md-center">
+					<div class="col-md-auto">
+						<h1>Marti</h1>
+					</div>
+				</div>
+				<br>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">9.00-10.00</div>
+					<div class="col-3">Back to school</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">11.00-12.00</div>
+					<div class="col-3">Deschidere Lore Ipsum</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">13.00-14.30</div>
+					<div class="col-3">Conferinta</div>
+				</div>
+				<br>
+				<br>
+				<div class="row justify-content-md-center">
+					<div class="col-md-auto">
+						<h1>Miercuri</h1>
+					</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">9.00-10.00</div>
+					<div class="col-3">Back to school</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">11.00-12.00</div>
+					<div class="col-3">Deschidere Lore Ipsum</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">13.00-14.30</div>
+					<div class="col-3">Conferinta</div>
+				</div>
+				<br>
+				<br>
+				<div class="row justify-content-md-center">
+					<div class="col-md-auto">
+						<h1>Joi</h1>
+					</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">9.00-10.00</div>
+					<div class="col-3">Back to school</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">11.00-12.00</div>
+					<div class="col-3">Deschidere Lore Ipsum</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">13.00-14.30</div>
+					<div class="col-3">Conferinta</div>
+				</div>
+				<br>
+				<br>
+				<div class="row justify-content-md-center">
+					<div class="col-md-auto">
+						<h1>Vineri</h1>
+					</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">9.00-10.00</div>
+					<div class="col-3">Back to school</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">11.00-12.00</div>
+					<div class="col-3">Deschidere Lore Ipsum</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">13.00-14.30</div>
+					<div class="col-3">Conferinta</div>
+				</div>
+				<br>
+				<br>
+			</div>
+			<div id="geo" class="container-fluid">
+				<img src="Images/geo.jpg">
+				<div class="text-block">
+					<h1>Geografie</h1>
+					<span><em>Dreams are our only geography—our native land.</em></span>
+					<span>— Dejan Stojanovic</span>
+				</div>
+			</div>
+			<div class="container-fluid">
+				<br>
+				<br>
+				<div class="row justify-content-md-center">
+					<div class="col-md-auto">
+						<h1>Luni</h1>
+					</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">9.00-10.00</div>
+					<div class="col-3">Back to school</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">11.00-12.00</div>
+					<div class="col-3">Deschidere Lore Ipsum</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">13.00-14.30</div>
+					<div class="col-3">Conferinta</div>
+				</div>
+				<br>
+				<br>
+				<div class="row justify-content-md-center">
+					<div class="col-md-auto">
+						<h1>Marti</h1>
+					</div>
+				</div>
+				<br>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">9.00-10.00</div>
+					<div class="col-3">Back to school</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">11.00-12.00</div>
+					<div class="col-3">Deschidere Lore Ipsum</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">13.00-14.30</div>
+					<div class="col-3">Conferinta</div>
+				</div>
+				<br>
+				<br>
+				<div class="row justify-content-md-center">
+					<div class="col-md-auto">
+						<h1>Miercuri</h1>
+					</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">9.00-10.00</div>
+					<div class="col-3">Back to school</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">11.00-12.00</div>
+					<div class="col-3">Deschidere Lore Ipsum</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">13.00-14.30</div>
+					<div class="col-3">Conferinta</div>
+				</div>
+				<br>
+				<br>
+				<div class="row justify-content-md-center">
+					<div class="col-md-auto">
+						<h1>Joi</h1>
+					</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">9.00-10.00</div>
+					<div class="col-3">Back to school</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">11.00-12.00</div>
+					<div class="col-3">Deschidere Lore Ipsum</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">13.00-14.30</div>
+					<div class="col-3">Conferinta</div>
+				</div>
+				<br>
+				<br>
+				<div class="row justify-content-md-center">
+					<div class="col-md-auto">
+						<h1>Vineri</h1>
+					</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">9.00-10.00</div>
+					<div class="col-3">Back to school</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">11.00-12.00</div>
+					<div class="col-3">Deschidere Lore Ipsum</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">13.00-14.30</div>
+					<div class="col-3">Conferinta</div>
+				</div>
+				<br>
+				<br>
+			</div>
+			<div id="chimie" class="container-fluid">
+				<img src="Images/ch.jpg">
+				<div class="text-block">
+					<h1>Chimie</h1>
+					<span><em>To think is to practice the brain chemistry.</em></span>
+					<span>— Deepak Chopra</span>
+				</div>
+			</div>
+			<div class="container-fluid">
+				<br>
+				<br>
+				<div class="row justify-content-md-center">
+					<div class="col-md-auto">
+						<h1>Luni</h1>
+					</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">9.00-10.00</div>
+					<div class="col-3">Back to school</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">11.00-12.00</div>
+					<div class="col-3">Deschidere Lore Ipsum</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">13.00-14.30</div>
+					<div class="col-3">Conferinta</div>
+				</div>
+				<br>
+				<br>
+				<div class="row justify-content-md-center">
+					<div class="col-md-auto">
+						<h1>Marti</h1>
+					</div>
+				</div>
+				<br>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">9.00-10.00</div>
+					<div class="col-3">Back to school</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">11.00-12.00</div>
+					<div class="col-3">Deschidere Lore Ipsum</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">13.00-14.30</div>
+					<div class="col-3">Conferinta</div>
+				</div>
+				<br>
+				<br>
+				<div class="row justify-content-md-center">
+					<div class="col-md-auto">
+						<h1>Miercuri</h1>
+					</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">9.00-10.00</div>
+					<div class="col-3">Back to school</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">11.00-12.00</div>
+					<div class="col-3">Deschidere Lore Ipsum</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">13.00-14.30</div>
+					<div class="col-3">Conferinta</div>
+				</div>
+				<br>
+				<br>
+				<div class="row justify-content-md-center">
+					<div class="col-md-auto">
+						<h1>Joi</h1>
+					</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">9.00-10.00</div>
+					<div class="col-3">Back to school</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">11.00-12.00</div>
+					<div class="col-3">Deschidere Lore Ipsum</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">13.00-14.30</div>
+					<div class="col-3">Conferinta</div>
+				</div>
+				<br>
+				<br>
+				<div class="row justify-content-md-center">
+					<div class="col-md-auto">
+						<h1>Vineri</h1>
+					</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">9.00-10.00</div>
+					<div class="col-3">Back to school</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">11.00-12.00</div>
+					<div class="col-3">Deschidere Lore Ipsum</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">13.00-14.30</div>
+					<div class="col-3">Conferinta</div>
+				</div>
+				<br>
+				<br>
+			</div>
+			<div id="fiz" class="container-fluid">
+				<img src="Images/fizica.jpg">
+				<div class="text-block">
+					<h1>Fizica</h1>
+					<span><em>A physicist is juts an atom's way of looking at itself.</em></span>
+					<span>— Niels Bohr</span>
+				</div>
+			</div>
+			<div class="container-fluid">
+				<br>
+				<br>
+				<div class="row justify-content-md-center">
+					<div class="col-md-auto">
+						<h1>Luni</h1>
+					</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">9.00-10.00</div>
+					<div class="col-3">Back to school</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">11.00-12.00</div>
+					<div class="col-3">Deschidere Lore Ipsum</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">13.00-14.30</div>
+					<div class="col-3">Conferinta</div>
+				</div>
+				<br>
+				<br>
+				<div class="row justify-content-md-center">
+					<div class="col-md-auto">
+						<h1>Marti</h1>
+					</div>
+				</div>
+				<br>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">9.00-10.00</div>
+					<div class="col-3">Back to school</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">11.00-12.00</div>
+					<div class="col-3">Deschidere Lore Ipsum</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">13.00-14.30</div>
+					<div class="col-3">Conferinta</div>
+				</div>
+				<br>
+				<br>
+				<div class="row justify-content-md-center">
+					<div class="col-md-auto">
+						<h1>Miercuri</h1>
+					</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">9.00-10.00</div>
+					<div class="col-3">Back to school</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">11.00-12.00</div>
+					<div class="col-3">Deschidere Lore Ipsum</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">13.00-14.30</div>
+					<div class="col-3">Conferinta</div>
+				</div>
+				<br>
+				<br>
+				<div class="row justify-content-md-center">
+					<div class="col-md-auto">
+						<h1>Joi</h1>
+					</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">9.00-10.00</div>
+					<div class="col-3">Back to school</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">11.00-12.00</div>
+					<div class="col-3">Deschidere Lore Ipsum</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">13.00-14.30</div>
+					<div class="col-3">Conferinta</div>
+				</div>
+				<br>
+				<br>
+				<div class="row justify-content-md-center">
+					<div class="col-md-auto">
+						<h1>Vineri</h1>
+					</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">9.00-10.00</div>
+					<div class="col-3">Back to school</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">11.00-12.00</div>
+					<div class="col-3">Deschidere Lore Ipsum</div>
+				</div>
+				<br>
+				<div class="row justify-content-md-center">
+					<div id="time" class="col-3">13.00-14.30</div>
+					<div class="col-3">Conferinta</div>
+				</div>
+				<br>
+				<br>
+			</div>
+			<br>
+		</div>
+		<footer>
+			<p>&copy2020 by Smaranda Tasmoc & Andrei Cerbu</p>
+		</footer>
+	</body>
+<!--Bootstrap Js CDN-->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<!--<script>
+		$(document).ready(function(){
+		  // Add smooth scrolling to all links
+		  $("a").on('click', function(event) {
+
+		    // Make sure this.hash has a value before overriding default behavior
+		    if (this.hash !== "") {
+		      // Prevent default anchor click behavior
+		      event.preventDefault();
+
+		      // Store hash
+		      var hash = this.hash;
+
+		      // Using jQuery's animate() method to add smooth page scroll
+		      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+		      $('html, body').animate({
+		        scrollTop: $(hash).offset().top
+		      }, 1000, function(){
+
+		        // Add hash (#) to URL when done scrolling (default click behavior)
+		        window.location.hash = hash;
+		      });
+		    } // End if
+		  });
+		});
+	</script>-->
+
+	<script>
+		$("#materie").change(function () {
+        var val = $(this).val();
+        if (val == "Geografie") {
+            $('#activitate').html("<option value='Expoziție - concurs de Fotografie Geografică: \"Secretele Naturii\"'>Expoziție - concurs de Fotografie Geografică: \"Secretele Naturii\"</option>\
+            <option value='\"Back to School\" - despre UE si instituțiile sale'>\"Back to School\" - despre UE si instituțiile sale</option>\
+            <option value='\"Let's Think about our Future Working Life\" - Diseminare proiect Erasmus '>\"Let's Think about our Future Working Life\" - Diseminare proiect Erasmus </option>\
+            <option value='\"GREEN\" - Activitate de Ecologizare'>\"GREEN\" - Activitate de Ecologizare</option>\
+            <option value='World Tour'>World Tour</option>\
+            <option value='Călătorii extraordinare'>Călătorii extraordinare</option>\
+            <option value='Treasure Hunt'>Treasure Hunt</option>\
+            <option value='Concurs interdisciplinar'>Concurs interdisciplinar</option>\
+            ");
+        } else if (val == "Chimie") {
+            $('#activitate').html("<option value='Concurs \"Chimia altfel\"'>Concurs \"Chimia altfel\"</option>\
+            <option value='Conferința \"Noblețea profesiei de medic\"'>Conferința \"Noblețea profesiei de medic\"</option>\
+            <option value='\"Magia chimiei \", sesiune experimentală'>\"Magia chimiei \", sesiune experimentală</option>\
+            <option value='Concurs interdisciplinar'>Concurs interdisciplinar</option>\
+            ");
+        } else if (val == "Fizica") { 
+            $('#activitate').html("<option value='\"FizArt - CREATIVITY, '19mission\" (gimnaziu)'>\"FizArt - CREATIVITY, '19mission\" (gimnaziu)</option>\
+            <option value='Rachete cu apă - concurs'>Rachete cu apă - concurs</option>\
+            <option value='FIZICĂ – ştiinţă dincolo de magie, sesiune experimentală '>FIZICĂ – ştiinţă dincolo de magie, sesiune experimentală </option>\
+            <option value='\"FizArt - CREATIVITY, '19mission\" (liceu) '>\"FizArt - CREATIVITY, '19mission\" (liceu) </option>\
+            <option value='Concurs interdisciplinar'>Concurs interdisciplinar</option>\
+            ");
+        } else if (val == "Matematica") {
+            $('#activitate').html("<option value='Conferință '>Conferință </option>\
+            <option value='Jocuri Mind Lab '>Jocuri Mind Lab </option>\
+            <option value='Atelier prezentare proiecte Math.en.Jeans '>Atelier prezentare proiecte Math.en.Jeans </option>\
+            <option value='Matematică din jurul nostru '>Matematică din jurul nostru </option>\
+            ");
+        } else if (val == "Biologie") {
+          $('#activitate').html("<option value='Introducere in Ornitologie'>Introducere in Ornitologie</option>\
+          <option value='Disecție anatomică (sesiune experimentală)'>Disecție anatomică (sesiune experimentală) </option>\
+          <option value='Curs de prim ajutor'>Curs de prim ajutor </option>\
+          <option value='Atelier de suturi chirurgicale'>Atelier de suturi chirurgicale </option>\
+          <option value='Concurs interdisciplinar'>Concurs interdisciplinar </option>\
+          <option value='Prieteni și dușmani din alimente'>Prieteni și dușmani din alimente </option>\
+          ");
+        } else if (val == "Informatica") {
+          $('#activitate').html("<option value='Robotica si LEGO, un hobby de actualitate'>Robotica si LEGO, un hobby de actualitate </option>\
+          <option value='Workshop Editare Video Adobe Premire Pro \"Dezvoltarea Carierei\"'>Workshop Editare Video Adobe Premire Pro \"Dezvoltarea Carierei\" </option>\
+          ");
+        } else if (val == "EdTehnologica") {
+          $('#activitate').html("<option value='Umbrele colorate'>Umbrele colorate </option> ");
+        } 
+    });
+	</script>
+	<script>
+		$(".geo").click(function() {
+	    $('html,body').animate({
+	        scrollTop: $("#geo").offset().top - 100},
+	        'slow');
+	    });
+	    $(".chimie").click(function() {
+	    $('html,body').animate({
+	        scrollTop: $("#chimie").offset().top - 100},
+	        'slow');
+	    });
+	    $(".fiz").click(function() {
+	    $('html,body').animate({
+	        scrollTop: $("#fiz").offset().top - 100},
+	        'slow');
+	    });
+	    $(".mate").click(function() {
+	    $('html,body').animate({
+	        scrollTop: $("#mate").offset().top - 100},
+	        'slow');
+	    });
+	    $(".bio").click(function() {
+	    $('html,body').animate({
+	        scrollTop: $("#bio").offset().top - 100},
+	        'slow');
+	    });
+	    $(".info").click(function() {
+	    $('html,body').animate({
+	        scrollTop: $("#info").offset().top - 100},
+	        'slow');
+	    });
+	    $(".navbar-brand").click(function() {
+	    $('html,body').animate({
+	        scrollTop: $("#banner").offset().top - 220},
+	        'slow');
+	    });
+	</script>
+</html>
